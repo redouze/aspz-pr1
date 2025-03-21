@@ -4,7 +4,7 @@
 ## Умова завдання:
 Припустимо, у вас є програма на C, що складається з кількох файлів:
  - main.c
- -input.c
+ - input.c
  - output.c
  - process1 (бібліотека у /usr/lib)
 - process (бібліотека у ~/mylibs)
@@ -98,8 +98,11 @@ $ cat main.c
 
 ```c
 #include <stdio.h>
-#include "input.h" #include "output.h"
+#include "input.h" 
+#include "output.h"
+
 extern void process1_function();
+
 int main() {
     int x = get_input();
     print_output(x); 
